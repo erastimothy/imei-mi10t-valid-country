@@ -98,12 +98,12 @@ function xiaomiCountry($imei)
         		//kalo ga mau pake fitur check imei atau ribet captha 
         		//di comment line dibawah ini yg     getLink($imei,$imei_country[1][0]);
         		getLink($imei,$imei_country[1][0]);
-        		$file = fopen('output-imei[MY|PH|TH].txt', 'a+');
-        		fwrite($file, "$result\n");
+        		$file = fopen('output-imei[MY-PH-TH].txt', 'a+');
+        		fwrite($file, "$result");
 				fclose($file);
         	}else{
         		$file = fopen('output-imei[another].txt', 'a+');
-        		fwrite($file, "$result\n");
+        		fwrite($file, "$result");
 				fclose($file);
 
         	}
